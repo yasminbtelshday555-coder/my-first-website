@@ -107,14 +107,15 @@ button:hover {
 
     <button onclick="bookAppointment()">קביעת תור 💅</button>
 
-    <div class="booking">
+    <form class="booking" action="https://formspree.io/f/mdenpnpb" method="POST"></form>
+    
     <h2>קביעת תור 📅</h2>
 
-    <input type="text" placeholder="השם שלך">
-    <input type="tel" placeholder="מספר טלפון">
-    <input type="date">
+  <input type="text" name="name" placeholder="השם שלך">
+    <input type="tel" name="phone" placeholder="מספר טלפון">
+    <input type="date" name="date">
 
-    <select>
+ <select name="service"></select>
     <option>בחרי טיפול</option>
     <option>מניקור</option>
     <option>טיפולי פנים</option>
@@ -122,16 +123,16 @@ button:hover {
     <option>עיצוב גבות</option>
 </select>
 
-   <button onclick="sendBooking()">שלחי בקשה 💕</button>
-</div>
+   <button type="submit">שלחי בקשה 💕</button>
+</form>
 
 <script>
     function bookAppointment() {
         alert("תודה! נשמח לקבוע לך תור 💕");
     }
 
-    function sendBooking() {
-    alert("הבקשה שלך התקבלה! 💕");
+    function 
+    
 }
 </script>
 <h2>השירותים שלנו 💖</h2>
@@ -141,7 +142,7 @@ button:hover {
     <li>טיפולי פנים ✨</li>
     <li>איפור 💄</li>
     <li>עיצוב גבות 🌸</li>
-    
+
     <h2>קצת עלינו 🌸</h2>
 
 <p>
