@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yasmin Beauty</title>
+
+    <style>
+        body {
+            background-color: pink;
+        }
+
+        h1 {
+    color: purple;
+    font-size: 50px;
+}
+
+h2 {
+    color: #c2185b;
+    font-size: 30px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 38px;
+    }
+
+    img {
+        width: 85%;
+    }
+
+    li {
+        width: 80%;
+    }
+}
+
+.booking {
+    background-color: white;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 20px;
+    width: 320px;
+}
+
+input {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+select {
+    display: block;
+    width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+img {
+    width: 350px;
+    border-radius: 20px;
+    margin: 20px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: white;
+    margin: 10px auto;
+    padding: 12px;
+    border-radius: 15px;
+    width: 300px;
+}
+
+button {
+    background-color: purple;
+    color: white;
+    font-size: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+}
+
+button:hover {
+    background-color: #ff69b4;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+    </style>
+</head>
+
+<body>
+
+    <h1>Yasmin Beauty ✨</h1>
+
+    <img src="https://picsum.photos/500/300" alt="Yasmin Beauty">
+
+    <p>ברוכה הבאה ל־Yasmin Beauty</p>
+
+    <p>טיפוח, יופי והרגשה נפלאה במקום אחד 💕</p>
+
+    <button onclick="bookAppointment()">קביעת תור 💅</button>
+
+    <div class="booking">
+    <h2>קביעת תור 📅</h2>
+
+    <input type="text" placeholder="השם שלך">
+    <input type="tel" placeholder="מספר טלפון">
+    <input type="date">
+
+    <select>
+    <option>בחרי טיפול</option>
+    <option>מניקור</option>
+    <option>טיפולי פנים</option>
+    <option>איפור</option>
+    <option>עיצוב גבות</option>
+</select>
+
+   <button onclick="sendBooking()">שלחי בקשה 💕</button>
+</div>
+
+<script>
+    function bookAppointment() {
+        alert("תודה! נשמח לקבוע לך תור 💕");
+    }
+
+    function sendBooking() {
+    alert("הבקשה שלך התקבלה! 💕");
+}
+</script>
+<h2>השירותים שלנו 💖</h2>
+
+<ul>
+    <li>מניקור 💅</li>
+    <li>טיפולי פנים ✨</li>
+    <li>איפור 💄</li>
+    <li>עיצוב גבות 🌸</li>
+    
+    <h2>קצת עלינו 🌸</h2>
+
+<p>
+    ב־Yasmin Beauty אנחנו מאמינות שכל אחת ראויה
+    להרגיש יפה, מטופחת ובטוחה בעצמה.
+</p>
+
+    <h2>צרי קשר 📞</h2>
+
+<p>טלפון: <a href="tel:0501234567">050-123-4567</a></p>
+<p>
+    <a href="https://wa.me/972501234567">שלחי לנו הודעה ב־WhatsApp 💬</a>
+</p>
+<p>אימייל: yasmin@example.com</p>
+</ul>
+</body>
+</html>
