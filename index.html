@@ -1,162 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Yasmin Beauty</title>
+   
+    <title>האתר הראשון שלי</title>
 
     <style>
-        body {
-            background-color: pink;
-        }
+body {
+    background-color: lightblue;
 
-        h1 {
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 400px;
+    margin: 50px auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border: 2px solid purple;
+}
+
+h1 {
     color: purple;
-    font-size: 50px;
-}
-
-h2 {
-    color: #c2185b;
-    font-size: 30px;
-}
-
-@media (max-width: 600px) {
-    h1 {
-        font-size: 38px;
-    }
-
-    img {
-        width: 85%;
-    }
-
-    li {
-        width: 80%;
-    }
-}
-
-.booking {
-    background-color: white;
-    padding: 20px;
-    margin: 30px auto;
-    border-radius: 20px;
-    width: 320px;
-}
-
-input {
-    display: block;
-    width: 90%;
-    margin: 10px auto;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    font-size: 16px;
-}
-
-select {
-    display: block;
-    width: 95%;
-    margin: 10px auto;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    font-size: 16px;
-}
-
-img {
-    width: 350px;
-    border-radius: 20px;
-    margin: 20px;
-}
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    background-color: white;
-    margin: 10px auto;
-    padding: 12px;
-    border-radius: 15px;
-    width: 300px;
+    font-size: 40px;
 }
 
 button {
     background-color: purple;
     color: white;
     font-size: 20px;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 25px;
+    padding: 10px 20px;
 }
 
 button:hover {
-    background-color: #ff69b4;
+    background-color: pink;
     transform: scale(1.05);
     transition: 0.2s;
 }
-    </style>
-</head>
 
+img {
+    width: 350px;
+    border-radius: 50%;
+
+    @media (max-width: 600px) {
+    .card {
+        width: 80%;
+    }
+}
+}
+    </style>
+
+</head>
 <body>
 
-    <h1>Yasmin Beauty ✨</h1>
+    <div class="card"></div>
 
-    <img src="https://picsum.photos/500/300" alt="Yasmin Beauty">
+    <h1>שלום! 👋</h1>
 
-    <p>ברוכה הבאה ל־Yasmin Beauty</p>
+    <p>זה האתר הראשון שאני בונה.</p>
 
-    <p>טיפוח, יופי והרגשה נפלאה במקום אחד 💕</p>
+    <img src="https://picsum.photos/300" alt="תמונה לדוגמה">
 
-    <button onclick="bookAppointment()">קביעת תור 💅</button>
+    <button onclick="sayHello()">לחצי כאן</button>
 
-    <form class="booking" action="https://formspree.io/f/mdenpnpb" method="POST"></form>
-    
-    <h2>קביעת תור 📅</h2>
+    </div>
 
-  <input type="text" name="name" placeholder="השם שלך">
-    <input type="tel" name="phone" placeholder="מספר טלפון">
-    <input type="date" name="date">
-
- <select name="service"></select>
-    <option>בחרי טיפול</option>
-    <option>מניקור</option>
-    <option>טיפולי פנים</option>
-    <option>איפור</option>
-    <option>עיצוב גבות</option>
-</select>
-
-   <button type="submit">שלחי בקשה 💕</button>
-</form>
+</body>
 
 <script>
-    function bookAppointment() {
-        alert("תודה! נשמח לקבוע לך תור 💕");
-    }
-
-    function 
-    
+function sayHello() {
+    alert("🎉  שלום! שמי יסמין ואני לומדת לתכנת!");
 }
 </script>
-<h2>השירותים שלנו 💖</h2>
 
-<ul>
-    <li>מניקור 💅</li>
-    <li>טיפולי פנים ✨</li>
-    <li>איפור 💄</li>
-    <li>עיצוב גבות 🌸</li>
-
-    <h2>קצת עלינו 🌸</h2>
-
-<p>
-    ב־Yasmin Beauty אנחנו מאמינות שכל אחת ראויה
-    להרגיש יפה, מטופחת ובטוחה בעצמה.
-</p>
-
-    <h2>צרי קשר 📞</h2>
-
-<p>טלפון: <a href="tel:0501234567">050-123-4567</a></p>
-<p>
-    <a href="https://wa.me/972501234567">שלחי לנו הודעה ב־WhatsApp 💬</a>
-</p>
-<p>אימייל: yasmin@example.com</p>
-</ul>
-</body>
 </html>
